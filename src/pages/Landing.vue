@@ -49,11 +49,11 @@
     </div>
 
     <!-- About section  -->
-    <div class="max-w-6xl mx-auto px-3 md:px-6 py-10 md:py-16 grid md:grid-cols-2 gap-10 items-center">
+    <div class="max-w-6xl mx-auto px-2 md:px-6 py-10 md:py-16 grid md:grid-cols-2 gap-10 items-center">
       
       <div class="text-center md:text-left">
         <h2 class="text-2xl md:text-3xl font-bold text-[#275c37] mb-4">About Us</h2>
-        <p class="text-gray-600 leading-relaxed mb-6">
+        <p class="text-gray-600 text-sm md:text-md leading-relaxed mb-6">
 
           "At <span class="font-semibold text-gray-800">ShopEase</span>, we’re redefining the way people shop online.
           What started as a simple idea — to make quality
