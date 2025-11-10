@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col lg:flex-row gap-8 p-8 pt-12  min-h-screen">
+  <div class="flex flex-col lg:flex-row gap-8 p-5 lg:p-8 pt-12  min-h-screen">
 
     <aside
       class="w-full lg:w-1/4 bg-[#f5f2f2ad] rounded-xl shadow-sm p-5 h-fit sticky top-5 hidden md:block"
@@ -51,12 +51,12 @@
             class="flex-1 px-4 py-2 outline-none"
             placeholder="Search products..."
           />
-          <button class="bg-[#275c37] text-white px-4">Search</button>
+          <button class="bg-[#275c37] text-white px-4"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
       </div>
 
       <div
-        class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+        class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 md:gap-6"
       >
         <ProductCard
           v-for="p in filteredProducts"

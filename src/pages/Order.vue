@@ -1,7 +1,7 @@
 <template>
   <section class="p-4 sm:p-6 md:p-10">
 
-    <div v-if="cart.selectedProduct?.length" class="flex flex-col md:flex-row gap-6">
+    <div v-if="cart.selectedProduct?.length" class="flex flex-col lg:flex-row gap-6">
       <div class="w-full max-h-[50vh] md:max-h-[70vh] overflow-y-scroll px-2 md:px-4 flex flex-col gap-3">
         <div v-for="item in cart.selectedProduct" :key="item.id"
           class="bg-white p-2 md:p-4 border-b shadow-sm border-gray-50 w-full flex h-40 gap-5 relative">
@@ -86,8 +86,8 @@
 <script setup>
 
 import { ref, computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import productsData from '../data/products.json'
+import {  useRouter } from 'vue-router'
+
 import { useCartStore } from '../store/useCart'
 import { toast } from 'vue3-toastify'
 
@@ -118,7 +118,7 @@ function placeOrder() {
   }
 
   toast.success(`Order placed!\nItems: ${cart.selectedProduct.length}\nTotal: $${total.value.toFixed(2)}`)
-  cart.clear()
+  
   router.push('/')
 }
 
